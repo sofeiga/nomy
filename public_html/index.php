@@ -1,3 +1,5 @@
+<?php require_once '../resources/initialise.php'; ?>
+
 <!DOCTYPE html>
 <html lang="">
 
@@ -16,7 +18,8 @@
 
     <body>
 
-        <h1 class="heading">Welcme to<br> the <span>booking app</span></h1>
+           <h1 class="heading">Welcome to<br><?php echo $user->username; ?> the <span>booking app</span></h1>
+
 
 
         <video width="300" height="150" autoplay="autoplay" loop="loop">
