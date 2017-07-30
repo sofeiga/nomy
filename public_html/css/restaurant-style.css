@@ -1,0 +1,1071 @@
+/* fonts */
+
+@font-face {
+    font-family: 'Whitney';
+    src: url('Whitney Medium.tff');
+}
+
+@font-face {
+    font-family: 'ADAM.CG PRO Regular';
+    src: url('ADAM.CG PRO.otf');
+}
+
+/* General */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+footer #close-icon {
+    width: 20px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* nav styling */
+
+#primary-navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 55px;
+    z-index: 10000;
+    background-color: #252525;
+    box-shadow: 1px 1px 5px #000;
+}
+
+
+#primary-navigation #header-logo {
+    margin: 5px 8px;
+    float: left;
+}
+
+
+#primary-navigation ul {
+    position: relative;
+    float: left;
+    height: auto;
+    font-family: 'Whitney', sans-serif;
+}
+
+#primary-navigation .clear {
+    clear: both;
+}
+
+#primary-navigation ul li {
+    list-style: none;
+    display: inline;
+    margin: 20px;
+}
+
+#primary-navigation ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+#primary-navigation ul li a:hover {
+    border-left: 1px solid firebrick;
+    border-right: 1px solid firebrick;
+    margin: -4px;
+    border-width: thick;
+}
+
+#primary-navigation .userData h1 {
+    position: absolute;
+    right: 0;
+    color: firebrick;
+    top: -5px;
+    font-family: 'Whitney', sans-serif;
+    font-weight: 800;
+    opacity: 0.2;
+}
+
+/* Content */
+
+#content-wrapper {
+    height: 100%;
+    position: relative;
+}
+
+#content-wrapper #profile-box {
+    margin-top: 55px;
+    width: 100%;
+    font-family: 'Whitney', sans-serif;
+    z-index:2;
+}
+
+#content-wrapper #profile-box #restaurant-img {
+    width: calc(50% - 10px);
+    margin: 0;
+    float: left;
+}
+
+#content-wrapper #profile-box .clear {
+    clear: both;
+}
+
+#content-wrapper #profile-box #restaurant-img img {
+    opacity: 0.8;
+    width: 100%;
+    height: 500px;
+}
+
+#content-wrapper #profile-box #restaurant-img h1 {
+    font-family: 'ADAM.CG PRO Regular';
+    position: absolute;
+    text-align: center;
+    width: 50%;
+    padding: 190px 0;
+    z-index: 3;
+    font-size: 3em;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: -3px 3px 10px #000;
+    
+}
+
+#content-wrapper #profile-box #restaurant-desc {
+    float: left;
+    width: calc(50% + 10px);
+    height: 505px;
+    background-color: #fff;
+    box-shadow: 2px 3px 10px #000;
+    text-align: center;
+}
+
+#content-wrapper #profile-box #restaurant-desc h1 {
+    text-align: center;
+    font-family: 'ADAM.CG PRO Regular';
+    font-weight: 400;
+    padding-bottom: 5px;
+    color: firebrick;
+    background-color: #252525;
+    box-shadow: 3px 3px 5px #000;
+    margin: 0;
+}
+
+/* About Sections */
+
+#content-wrapper #profile-box #restaurant-desc #specialty-section {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #252525;
+}
+
+#content-wrapper #profile-box #restaurant-desc #specialty-section:hover {
+    background-color: lightgoldenrodyellow;
+    transition: background-color ease 0.8s;
+}
+
+#content-wrapper #profile-box #restaurant-desc #specialty-section #specialtyIcon {
+    width: 80px;
+    margin: 20px 20px 0 20px;
+    float: left;
+}
+
+#content-wrapper #profile-box #restaurant-desc #specialty-section p {
+    float: left;
+    margin-top: 35px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#content-wrapper #profile-box #restaurant-desc #specialty-section .clear {
+    clear:both;
+}
+
+/* */
+
+#content-wrapper #profile-box #restaurant-desc #location-section {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #252525;
+}
+
+#content-wrapper #profile-box #restaurant-desc #location-section:hover {
+    background-color: lightgoldenrodyellow;
+    transition: background-color ease 0.8s;
+}
+
+#content-wrapper #profile-box #restaurant-desc #location-section #locationIcon {
+    width: 80px;
+    margin: 20px 20px 0 20px;
+    float: left;
+}
+
+#content-wrapper #profile-box #restaurant-desc #location-section p {
+    float: left;
+    margin-top: 35px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#content-wrapper #profile-box #restaurant-desc #location-section .clear {
+    clear:both;
+}
+
+/* */
+
+#content-wrapper #profile-box #restaurant-desc #price-section {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #252525;
+}
+
+#content-wrapper #profile-box #restaurant-desc #price-section:hover {
+    background-color: lightgoldenrodyellow;
+    transition: background-color ease 0.8s;
+}
+
+#content-wrapper #profile-box #restaurant-desc #price-section #priceIcon {
+    width: 80px;
+    margin: 20px 20px 0 20px;
+    float: left;
+}
+
+#content-wrapper #profile-box #restaurant-desc #price-section p {
+    float: left;
+    margin-top: 35px;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#content-wrapper #profile-box #restaurant-desc #price-section .clear {
+    clear:both;
+}
+
+#content-wrapper #profile-box #restaurant-desc #bookBtn {
+    border: 3px solid #252525;
+    width: 250px;
+    height: 50px;
+    background-color: #fff;
+    font-family: 'ADAM.CG PRO Regular';
+    color: firebrick;
+    font-size: 2em;
+    margin: 130px auto;
+    cursor: pointer;
+}
+
+#content-wrapper #profile-box #restaurant-desc #bookBtn:hover {
+    background-color: #252525;
+    color: #fff;
+    transition: background-color ease 0.8s, color 0.8s
+}
+
+#content-wrapper #page-content {
+    margin-top: -27px;
+    height: auto;
+    background-color: #252525;
+    z-index: 1;
+}
+
+#content-wrapper #page-content h1 {
+    font-family: 'ADAM.CG PRO Regular';
+    color: firebrick;
+    text-align: center;
+}
+
+#content-wrapper #page-content p {
+    font-family: 'whitney', sans-serif;
+    color: #fff;
+    font-weight: 400;
+    text-align: justify;
+    margin: 10px 15px;
+}
+
+#content-wrapper #page-content #contact-info {
+    height: 250px;
+    width: 100%;
+    text-align: center;
+  
+}
+
+#content-wrapper #page-content #contact-info #social-wrapper {
+    border-bottom: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+
+#content-wrapper #page-content #contact-info #social-wrapper #facebook-icon {
+    width: 30px;
+    display: inline-block;
+
+ 
+   
+}
+
+#content-wrapper #page-content #contact-info #social-wrapper h3 {
+    font-family: 'Whitney',sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    text-align: center;
+    margin-top: 2px;
+}
+
+#content-wrapper #page-content #contact-info #social-wrapper #twitter-icon {
+    width: 30px;
+    display: inline-block;
+    margin-left: 5px;
+
+    
+}
+
+#content-wrapper #page-content #contact-info #contact-wrapper {
+    margin-top: 10px;
+}
+
+#content-wrapper #page-content #contact-info #contact-wrapper h3 {
+      font-family: 'Whitney',sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 2px;
+}
+
+#content-wrapper #page-content #contact-info #contact-wrapper #phone-icon {
+    width: 30px;
+   float: left;
+    margin-left: 350px;
+    
+}
+
+#content-wrapper #page-content #contact-info #contact-wrapper p {
+    float: left;
+}
+
+#content-wrapper #page-content #contact-info #contact-wrapper #home-icon {
+    width: 30px;
+    float: left;
+    margin-left: 100px;
+}
+
+#content-wrapper #page-content #contact-info #contact-wrapper a {
+    float: left;
+    font-family: 'Whitney', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#content-wrapper #page-content #contact-info #contact-wrapper #mail-icon {
+    width: 30px;
+    float: left;
+    margin-left: 100px;
+}
+
+#content-wrapper #page-content #contact-info #contact-wrapper .clear {
+    clear: both;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-family: 'Whitney', sans-serif;
+    color: #fff;
+    background-color: #0B0606;
+    padding-top: 5px;
+}
+
+footer p {
+    display: inline;
+}
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 394px) {
+    #primary-navigation ul {
+        display: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img {
+        width: 100%;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img #REST-pic {
+        height: 250px;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img h1 {
+      padding: 90px 0;
+        width: 100%;
+        font-size: 1.8em;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc {
+        width: 100%;
+        height: 600px;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section #specialtyIcon {
+        display:block;
+        margin: 10px auto;
+        width: 90px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section p {
+        margin-top: 17px;
+        font-size: 18px;
+        margin-left: 20px;
+         float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section #locationIcon {
+         display:block;
+        margin: 10px auto;
+        width: 90px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section p {
+        margin-top: 17px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section #priceIcon {
+        width: 90px;
+        display:block;
+        margin: 10px auto;
+        float:none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section p {
+        margin-top: 17px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #bookBtn {
+        margin-top: 15px;
+        float: none;
+        margin: 35px auto;
+    }
+    
+    
+    #content-wrapper #page-content {
+        height: 1124px;
+    }
+    
+    #content-wrapper #page-content #contact-wrapper {
+        text-align: center;
+   
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #phone-icon {
+        float: none;
+        margin: auto;
+        display:block;
+        margin-bottom: 5px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #mail-icon {
+        float: none;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #home-icon {
+        float: none;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+        
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper p {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper a {
+        float: none;
+        display:block;
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+}
+
+@media only screen and (min-width: 394px) and (max-width: 540px) {
+
+     #primary-navigation ul {
+        display: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img {
+        width: 100%;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img #REST-pic {
+        height: 280px;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img h1 {
+        font-size: 1.8em;
+        width: 100%;
+        padding: 110px 0;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc {
+        width: 100%;
+        height: 600px;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section #specialtyIcon {
+        display:block;
+        margin: 10px auto;
+        width: 90px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section p {
+        margin-top: 17px;
+        font-size: 18px;
+        margin-left: 20px;
+         float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section #locationIcon {
+         display:block;
+        margin: 10px auto;
+        width: 90px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section p {
+        margin-top: 17px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section #priceIcon {
+        width: 90px;
+        display:block;
+        margin: 10px auto;
+        float:none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section p {
+        margin-top: 17px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #bookBtn {
+        margin-top: 15px;
+        float: none;
+        margin: 35px auto;
+    }
+    
+    
+    #content-wrapper #page-content {
+        height: 1035px;
+    }
+    
+    #content-wrapper #page-content #contact-wrapper {
+        text-align: center;
+   
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #phone-icon {
+        float: none;
+        margin: auto;
+        display:block;
+        margin-bottom: 5px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #mail-icon {
+        float: none;
+        margin: auto;
+        display: block;
+        margin-top: 50px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #home-icon {
+        float: none;
+        margin: auto;
+        display: block;
+        margin-top: 50px;
+        
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper p {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper a {
+        float: none;
+        display:block;
+        text-align: center;
+        margin-top: 5px;
+} 
+}
+
+@media only screen and (min-width: 540px) and (max-width: 656px) {
+        #primary-navigation ul {
+        display: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img {
+        width: 100%;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img #REST-pic {
+        height: 300px;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img h1 {
+        font-size: 1.8em;
+       width: 100%;
+        padding: 120px 0;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc {
+        width: 100%;
+        height: 600px;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section #specialtyIcon {
+        display:block;
+        margin: 10px auto;
+        width: 90px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section p {
+        margin-top: 17px;
+        font-size: 18px;
+        margin-left: 20px;
+         float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section #locationIcon {
+         display:block;
+        margin: 10px auto;
+        width: 90px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section p {
+        margin-top: 17px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section #priceIcon {
+        width: 90px;
+        display:block;
+        margin: 10px auto;
+        float:none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section p {
+        margin-top: 17px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #bookBtn {
+        margin-top: 15px;
+        float: none;
+        margin: 35px auto;
+    }
+    
+    
+    #content-wrapper #page-content {
+        height: 850px;
+    }
+    
+    #content-wrapper #page-content #contact-wrapper {
+        text-align: center;
+   
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #phone-icon {
+        float: none;
+        margin: auto;
+        display:block;
+        margin-bottom: 5px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #mail-icon {
+        float: none;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #home-icon {
+        float: none;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+        
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper p {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper a {
+        float: none;
+        display:block;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 656px) and (max-width: 780px) {
+        #primary-navigation ul {
+        display: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img {
+        width: 100%;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img #REST-pic {
+        height: 350px;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img h1 {
+        font-size: 3em;
+        width: 100%;
+        padding: 115px 0;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc {
+        width: 100%;
+        height: 600px;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section #specialtyIcon {
+        display:block;
+        margin: 10px auto;
+        width: 90px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section p {
+        margin-top: 17px;
+        font-size: 18px;
+        margin-left: 20px;
+         float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section #locationIcon {
+         display:block;
+        margin: 10px auto;
+        width: 90px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section p {
+        margin-top: 17px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section #priceIcon {
+        width: 90px;
+        display:block;
+        margin: 10px auto;
+        float:none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section p {
+        margin-top: 17px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #bookBtn {
+        margin-top: 15px;
+        float: none;
+        margin: 35px auto;
+    }
+    
+    
+    #content-wrapper #page-content {
+        height: 780px;
+    }
+    
+    #content-wrapper #page-content #contact-wrapper {
+        text-align: center;
+   
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #phone-icon {
+        float: none;
+        margin: auto;
+        display:block;
+        margin-bottom: 5px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #mail-icon {
+        float: none;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #home-icon {
+        float: none;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+        
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper p {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper a {
+        float: none;
+        display:block;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 940px) {
+        #primary-navigation ul {
+        display: block;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img {
+        width: 100%;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img #REST-pic {
+        height: 400px;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img h1 {
+        padding: 150px 0;
+        width: 100%;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc {
+        width: 100%;
+        height: 600px;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section #specialtyIcon {
+        display:block;
+        margin: 10px auto;
+        width: 90px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc  #specialty-section p {
+        margin-top: 17px;
+        font-size: 18px;
+        margin-left: 20px;
+         float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section #locationIcon {
+         display:block;
+        margin: 10px auto;
+        width: 90px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #location-section p {
+        margin-top: 17px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section {
+        height: 130px;
+        text-align: center;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section #priceIcon {
+        width: 90px;
+        display:block;
+        margin: 10px auto;
+        float:none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #price-section p {
+        margin-top: 17px;
+        float: none;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #bookBtn {
+        margin-top: 15px;
+        float: none;
+        margin: 35px auto;
+    }
+    
+    
+    #content-wrapper #page-content {
+        height: 770px;
+    }
+    
+    #content-wrapper #page-content #contact-wrapper {
+        text-align: center;
+   
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #phone-icon {
+        float: none;
+        margin: auto;
+        display:block;
+        margin-bottom: 5px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #mail-icon {
+        float: none;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper #home-icon {
+        float: none;
+        margin: auto;
+        display: block;
+        margin-top: 20px;
+        
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper p {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    #content-wrapper #page-content #contact-info #contact-wrapper a {
+        float: none;
+        display:block;
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (min-width: 940px) and (max-width: 1200px) {
+    #content-wrapper #profile-box #restaurant-img #REST-pic {
+        height:400px;
+    }
+    
+    #content-wrapper #profile-box #restaurant-img h1 {
+        padding: 150px 0;
+        font-size: 2.5em;
+        width: 50%;
+                
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc {
+        height: 400px;
+    }
+    
+    #content-wrapper #profile-box #restaurant-desc #bookBtn {
+        margin: 40px auto;
+    }
+
+    #content-wrapper #page-content {
+        height: 592px;
+    }
+    
+    #content-wrapper #page-content #desc-heading {
+        text-align: left;
+    }
+
+    #content-wrapper #page-content #contact-info #contact-wrapper #icons-wrap {
+       margin-left: -250px;
+
+    }
+  
+}
