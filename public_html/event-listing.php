@@ -11,34 +11,9 @@
    
         <!-- Menu -->
     
-    <nav id="primary-navigation">
-        <a href="/homepage.html" id="header-logo">
-            <img src="img/logo-nomy.png" alt="Nomy Logo" width="140px">
-        </a>
-        <ul>
-             <li>
-                <a href="homepage.html">Home</a>
-            </li>
-
-            <li>
-                <a href="restaurant-listing.html">Restaurants</a>
-            </li>
-
-            <li>
-                <a href="#">Events</a>
-            </li>
-
-            <li>
-                <a href="#">About Us</a>
-            </li>
-
-        </ul>
-        <div class="clear"></div>
-        <div class="userData">
-            <h1>Placeholder</h1>
-        </div>
-    </nav>
-    s
+      <?php include '../resources/part/header.php'; ?>
+        
+        
    <div id="content-wrapper">
        <h1 id="header">Our curated list of restaurants</h1>
        <div id="list">

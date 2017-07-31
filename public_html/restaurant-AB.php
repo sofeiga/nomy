@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>The Beer Workshop</title>
-        <link rel="stylesheet" href="restaurant-style.css">
+        <link rel="stylesheet" href="css/restaurant-style.css">
 
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -13,33 +13,7 @@
     <body>
         <!-- Menu -->
 
-        <nav id="primary-navigation">
-            <a href="/homepage.html" id="header-logo">
-                <img src="img/logo-nomy.png" alt="Nomy Logo" width="140px">
-            </a>
-            <ul>
-                <li>
-                    <a href="homepage.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="restaurant-listing.html">Restaurants</a>
-                </li>
-
-                <li>
-                    <a href="event-listing.html">Events</a>
-                </li>
-
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-
-            </ul>
-            <div class="clear"></div>
-            <div class="userData">
-                <h1>Placeholder</h1>
-            </div>
-        </nav>
+        <?php include '../resources/part/header.php'; ?>
 
         <!-- Content -->
 
@@ -141,6 +115,6 @@
 
 
 
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

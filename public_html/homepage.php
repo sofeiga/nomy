@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="jquery-ui.min.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <title>Nomy | Reservation Page</title>
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css" />
 
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -16,7 +16,7 @@
 </head>
 
 <body>
-
+<?php include '../resources/part/header.php'; ?>
     <div id="content-wrapper">
 
         <section id="CTA">
@@ -64,7 +64,10 @@
 
             </div>
             <div id="booking">
-                <form action="book.php" method="get">
+                <div id="button-change">
+                <h2 id="rest-btn">Restaurants</h2><h2 id="event-btn">Events</h2>
+                </div>
+                <form action="book.php" method="get" id="first-form">
                     <select class="bookingInput">
                     <option class="optionStyle">Select a restaurant</option>
                     <option>Atelierul de Bere</option>
@@ -74,7 +77,7 @@
                     <option>Fenice Palas</option>
                 </select>
 
-                    <input type="text" name="date" id="datepicker" placeholder="Select a date" class="bookingInput">
+                    <input type="text" name="date" class="datepicker bookingInput" placeholder="Select a date">
                     <input type="text" name="timepicker" class="wickedpicker bookingInput" placeholder="Select a time">
                     <select class="bookingInput">
                     <option class="optionStyle">Select the number of bookies</option>
@@ -95,8 +98,36 @@
 
                     <button type="submit" id="bookBtn"><span id="bookTxt">Book</span></button>
                 </form>
+<div id="booking-events" style="display:none;">
+          <form action="" method="get">
+                    <select class="bookingInput">
+                    <option class="optionStyle">Select an event</option>
+                    <option>Beer Night</option>
+                    <option>Arabic Night</option>
+                    <option>Mexican Fiesta</option>
+                    <option>Masquerade</option>
+                
+                </select>
+
+                    <input type="text" name="date" class="datepicker bookingInput" placeholder="Select a date">
+                    <input type="text" name="timepicker" class="wickedpicker bookingInput" placeholder="Select a time">
+                    <select class="bookingInput">
+                    <option class="optionStyle">Select the number of bookies</option>
+                     <option>1</option>
+                      <option>2</option>
+                       <option>3</option>
+                        <option>4</option>
+                         <option>5</option>
+                          <option>6</option>
+                           <option>7</option>
+                </select>
+
+
+                     <button type="submit" id="bookBtn"><span id="bookTxt">Book</span></button>
+</div>
+
             </div>
-            
+        
             <div class="clear"></div>
         </section>
 
@@ -108,8 +139,8 @@
 
     </div>
 
-    <script src="script.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+                <script src="js/script.js"></script>
+    <script type="text/javascript" src="js/slick/slick.min.js"></script>
 </body>
 
 </html>

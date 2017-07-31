@@ -17,6 +17,7 @@ body {
     padding: 0;
     height: 100%;
     overflow: hidden;
+   
 }
 
 video {
@@ -60,6 +61,11 @@ video {
     z-index: 1000000;
 }
 
+#content-wrapper {
+    width: 100%;
+    text-align:center;
+}
+
 /* Login styling */
 
 input::placeholder {
@@ -75,13 +81,13 @@ input::placeholder {
 }
 
 #forms #login #loginIntro {
-    position: fixed;
     color: #fff;
     font-family: 'Whitney', sans-serif;
     font-weight: 600;
     font-size: 1em;
     right: 790px;
-    top: 32%;
+    left: 100px;
+    position: relative;
 }
 
 #forms #logoImg {
@@ -183,7 +189,7 @@ input::placeholder {
 /* Login or register */
 
 #buttons #loginCTA {
-    position: fixed;
+    position: relative;
     width: 20px;
     z-index: 3;
     color: #fff;
@@ -192,19 +198,19 @@ input::placeholder {
     border-bottom-right-radius: 5px;
     background-color: firebrick;
     margin: -5px;
-    top: 25%;
+    top: -90px;
     cursor: pointer;
     vertical-align: middle;
     text-align: center;
 }
 
 #buttons #registerCTA {
-    position: fixed;
+    position: relative;
     width: 20px;
     z-index: 2;
     color: #fff;
     font-size: 0.7em;
-    top: 55%;
+    top: -106px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     background-color: gray;
@@ -259,7 +265,7 @@ input::placeholder {
     #forms {
         height: 500px;
         width: 450px;
-        margin: 148px 3px;
+        margin: 148px auto;
     }
     
     .heading {

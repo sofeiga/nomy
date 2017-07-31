@@ -18,7 +18,7 @@
 
     <body>
 
-           <h1 class="heading">Welcome to<br><?php echo $user->username; ?> the <span>booking app</span></h1>
+           <h1 class="heading">Welcome to<br> the Nomy <span>booking app</span></h1>
 
 
 
@@ -26,7 +26,7 @@
             <source src="video/cafestock.mp4" type="video/mp4" />
         </video>
 
-
+           <div id="content-wrapper">
         <div id="forms">
             <img src="img/logo-nomy.png" alt="logo" id="logoImg">
 
@@ -64,9 +64,8 @@
             </div>
 
         </div>
-        <div id="abtUsBtn"><a href="#" id="abtusTxt">Who are we?</a></div>
 
-        
+           </div>
         
         <script src="js/script.js"></script>
     </body>

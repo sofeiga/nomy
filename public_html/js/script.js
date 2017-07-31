@@ -10,7 +10,25 @@ $(document).ready(function () {
     // Datepicker
 
     $(function () {
-        $("#datepicker").datepicker();
+        $(".datepicker").datepicker();
+    });
+
+// Event/Restaurant login form change 
+
+    $('#rest-btn').click(function () {
+       console.log('Hello');
+       $('#first-form').show();
+       $('#booking-events').hide();
+        $('#rest-btn').css("background-color", "firebrick");
+        $('#event-btn').css("background-color", "#252525");
+    });
+    
+     $('#event-btn').click(function () {
+       console.log('Hello');
+       $('#first-form').hide();
+       $('#booking-events').show();
+               $('#rest-btn').css("background-color", "#252525");
+        $('#event-btn').css("background-color", "firebrick");
     });
 
     // Register or login form change 
